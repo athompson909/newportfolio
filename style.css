@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    /*letteracing: -.03em;*/
+}
+
+.navbar {
+    margin: 2em 0 1em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-item {
+    font-size: 1.4em;
+}
+
+.left-nav-custom, .right-nav-custom {
+}
+
+.left-nav-custom {
+
+}
+
+.right-nav-custom {
+    /*flex-grow: 2;*/
+}
+
+.right-nav-custom a, .left-nav-custom a {
+    letter-spacing: -.03em;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+    line-height: 0;
+    margin: 0;
+    padding: 2em .6em .72em .6em;
+}
+
+.right-nav-custom a:hover, .left-nav-custom a:hover {
+    text-decoration: none;
+    color: #000;
+    background-color: #f0f0f0;
+}
+
+footer {
+    width: 100%;
+    height: 60em;
+}
+
+.title-img {
+
+    width: 100%;
+    background: linear-gradient(50deg, rgba(170, 255, 0, .4), rgba(170, 255, 0, 1)), url(images/sandoval.jpg);
+    /*background: linear-gradient(50deg, #ff4169 0, #7c26f8 100%), url(images/sandoval.jpg);*/
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+}
+
+.title-img-first {
+
+    height: 22em;
+}
+
+.title-img-second, .title-img-third {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-img-second {
+    height: 7em;
+}
+
+.title-img-third {
+    height: 18em;
+}
+
+#title {
+    margin: -16em auto 0 auto;
+    display: flex;
+    justify-content: center;
+
+    opacity: .7;
+    color: #000;
+}
+
+#title-inner {
+    text-align: center;
+}
+
+#title-inner h1 {
+    letter-spacing: -.03em;
+    font-size: 5.2em;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+#title-inner h3 {
+    letter-spacing: -.03em;
+    margin-top: 0;
+    font-size: 2.4em;
+    font-weight: 400;
+}
+
+.body {
+    display: flex;
+    margin: 2em 8%;
+    justify-content: space-between;
+}
+
+.welcome, .welcome-second {
+    width: 65%;
+    /*width: 100%;*/
+    background-color: #f0f0f0;
+    font-size: 1.3em;
+    /*padding: 1em 2.5em;*/
+    margin: .1em;
+}
+
+.welcome {
+    float: left;
+}
+
+.welcome-second {
+    float: right;
+}
+
+.welcome p, .welcome-second p, .body-inner-full p {
+    padding: .8em 2.5em;
+}
+
+.sidebar, .sidebar-second {
+    width: 32%;
+    /*width: 100%;*/
+    background-color: #f0f0f0;
+    font-size: 1.3em;
+    padding: 1em 0;
+    align-self: center;
+    margin: .1em;
+
+}
+
+.sidebar {
+
+    float: right;
+}
+
+.sidebar-second {
+    float: left;
+}
+
+.body-inner-full {
+    width: 100%;
+    background-color: #f0f0f0;
+    font-size: 1.3em;
+    margin: -.2em .1em .1em .1em;
+}
+
+.icon-container {
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    padding: 0 1em;
+}
+
+.icon {
+    width: 2.6em;
+    padding: .2em;
+}
+
+.welcome span, .welcome-second span, .sidebar span, .sidebar-second span, .body-inner-full span {
+    font-weight: 700;
+}
+
+.secondary-title {
+    opacity: .7;
+    color: #000;
+}
+
+.secondary-title-inner h3 {
+    letter-spacing: -.03em;
+    font-size: 2.4em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.left-project-image {
+    filter: brightness(70%);
+    width: 36%;
+    float: left;
+    padding: 2em 1.2em 3em 2.5em;
+
+    /*transition: all .6s ease;*/
+    /*-webkit-transition: all .2s ease;*/
+}
+
+.right-project-video {
+    filter: brightness(70%);
+    width: 50%;
+    height: 16em;
+    float: right;
+    margin: 2em 2.5em 3em 1.2em;
+
+    /*transition: all .6s ease;*/
+    /*-webkit-transition: all .2s ease;*/
+}
+
+/*.left-project-image:hover {*/
+
+    /*filter: brightness(55%);*/
+    /*transition: all .6s ease;*/
+    /*-webkit-transition: all .2s ease;*/
+/*}*/
+
+.body-title {
+    font-size: 1.4em;
+}
+
+.button-standard {
+    background-color: #AAD700;
+    color: #000;
+    font-weight: 700;
+
+    padding: .6em 1.4em;
+    font-size: 1em;
+
+    margin-bottom: 1em;
+
+
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease;
+}
+
+.button-standard:hover {
+    background-color: #8BB000;
+
+
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease;
+}
+
+a {
+
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid #000;
+    margin: .1em 0;
+    padding: 0;
+}
