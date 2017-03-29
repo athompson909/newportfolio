@@ -13,6 +13,23 @@ hr {
     padding: 0;
 }
 
+.spacer {
+    width 100%;
+    height: 4em;
+}
+
+#up-arrow {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    opacity: .3;
+    width: 3.6em;
+}
+
+#up-arrow:hover {
+    cursor:pointer;
+}
+
 .navbar {
     margin: 2em 0 1em 0;
     display: flex;
@@ -75,6 +92,13 @@ footer {
     background-repeat: repeat-y;
 }
 
+.title-img-fourth {
+    background: linear-gradient(50deg, rgba(170, 255, 0, .4), rgba(170, 255, 0, 1)), url(images/quito.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+}
+
 .title-img-first {
     height: 22em;
 }
@@ -98,8 +122,8 @@ footer {
     height: 7em;
 }
 
-.title-img-third {
-    height: 18em;
+.title-img-third, .title-img-fourth {
+    height: 22em;
 }
 
 .title {
@@ -129,10 +153,10 @@ footer {
     font-weight: 400;
 }
 
-.title-inner-third h3 {
+.title-inner-third h3, .title-inner-fourth h3 {
     letter-spacing: -.03em;
-    margin: 2.6em 0 0 0;
-    font-size: 3em;
+    margin: 2em 0 0 0;
+    font-size: 3.6em;
     font-weight: 700;
 }
 
@@ -187,6 +211,11 @@ footer {
     width: 100%;
     background-color: #f0f0f0;
     font-size: 1.3em;
+    margin: .1em .1em .1em .1em;
+}
+
+.body-inner-full-special-case {
+
     margin: -.2em .1em .1em .1em;
 }
 
@@ -279,4 +308,21 @@ a {
 
 a:hover {
     text-decoration: none;
+}
+
+footer {
+    margin-top: 12em;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 24em;
+}
+
+
+.icon-container-footer {
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    opacity: .8;
+    margin: 3%;
+    float:right;
+    padding: 0 1em;
 }

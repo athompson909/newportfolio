@@ -10,13 +10,26 @@
     <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 
+    <img id="up-arrow" onclick="scrollToTop()" src="https://image.flaticon.com/icons/svg/25/25282.svg"/>
 
     <nav class= "navbar col-sm-12">
         <nav class="text-left left-nav-custom navbar-item"><a href="#">~/</a></nav>
-        <nav class="text-right right-nav-custom navbar-item"><a href="">contact</a><a href="">projects</a><a href="">experience</a><a href="">trips</a></nav>
+        <nav class="text-right right-nav-custom navbar-item">
+            <a href="/contact.html">contact</a>
+            <a href="#" onclick="scrollToProjects()">projects</a>
+            <a href="#" onclick="scrollToExperience()">experience</a>
+            <a href="#" onclick="scrollToSkills()">skills</a>
+            <a href="/blog/index.html">trips</a>
+        </nav>
     </nav>
 
     <div class="title-img title-img-first">
@@ -25,7 +38,7 @@
     <div class="title">
         <div class="title-inner">
             <h1>Adam Thompson</h1>
-            <h3>Software Developer | World Traveler</h3>
+            <h3>Software Engineer | Web Developer | World Traveler</h3>
         </div>
     </div>
 
@@ -48,8 +61,8 @@
 
     <div class="title-img title-img-second">
         <div class="secondary-title">
-            <div class="secondary-title-inner">
-                <h3>Learn more:</h3>
+            <div class="secondary-title-inner" id="projects-section">
+                <h3>More about me:</h3>
             </div>
         </div>
 
@@ -61,7 +74,7 @@
         <div class="body-inner">
             <div class="sidebar-second">
                 <div class="icon-container">
-                    <p class="body-title"><span>Personal Projects:</span></p>
+                    <p class="body-title"><span>Projects Portfolio</span></p>
                 </div>
             </div>
             <div class="welcome-second">
@@ -71,7 +84,7 @@
     </div>
 
     <div class="body">
-        <div class="body-inner-full">
+        <div class="body-inner-full body-inner-full-special-case">
             <a href="http://outdooradventurecrew.com"><img class="left-project-image" src="images/oac.png"/></a>
             <p><span class="body-title">Outdoor Adventure Crew website</span><br/><br/>
             I've developed and am currently maintaining a website that supporting an Instagram page used to document adventure travel and to do advertising for third party companies.<br/><br/>
@@ -83,7 +96,7 @@
     </div>
 
     <div class="body">
-        <div class="body-inner-full">
+        <div class="body-inner-full body-inner-full-special-case">
             <iframe class="right-project-video" frameBorder="0" src="https://www.youtube.com/embed/ZNriuY9t0rY"></iframe>
             <p><span class="body-title">The Cube</span><br/><br/>
                 Built an LED cube with a team of 6 for an ACM Hack Day.  Used an Arduino to power the cube.  As a team we developed algorithms in C++ to determine lighting patterns.
@@ -98,18 +111,150 @@
 
     <div class="title-img title-img-third">
         <p class="caption">Capitol Reef National Park, Utah, USA</p>
-
-
     </div>
     <div class="title">
-        <div class="title-inner-third">
-            <h3>Experience Base</h3>
-            <hr/>
+        <div class="title-inner-third" id="experience-section">
+            <h3>Professional Experience</h3>
+            <!--<hr/>-->
         </div>
     </div>
 
-    <footer></footer>
+    <div class="spacer"></div>
+    <div class="body">
+        <div class="body-inner">
+            <div class="sidebar-second">
+                <div class="icon-container">
+                    <p>
+                        <span class="body-title">BYU McKay School of Education</span>
+                        <br/>
+                        Full Stack Web Developer
+                        <br/><br/>Provo, UT
+                    </p>
+                </div>
+            </div>
+            <div class="welcome-second">
+                <p>
+                    <span>Experience Obtained:</span>
+                    <br/>
+                    • Collaborate with 4-6 other developers as part of both the special projects and support teams in order to be able to accomplish larger-scale projects<br/>
+                    • Learned how to use Drupal and PHP in order to maintain and update the website of the education department and respond quickly to internal requests to make changes and fix errors
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="body-inner">
+            <div class="sidebar-second">
+                <div class="icon-container">
+                    <p>
+                        <span class="body-title">InfoTrax Systems</span>
+                        <br/>
+                        R&D Intern
+                        <br/><br/>Orem, UT
+                    </p>
+                </div>
+            </div>
+            <div class="welcome-second">
+                <p>
+                    <span>Experience Obtained:</span>
+                    <br/>
+                    • Tested software using an agile methodology, was able to find and report usability and functionality errors in the software that were then subsequently fixed<br/>
+                    • Provided suggestions of ways to improve the design of the UI, which were later implemented<br/>
+                    • Worked independently with minimal guidance from superiors<br/>
+                    • Learned effective communication and collaboration skills working directly with outsourced testers and developers in Hyderabad, India<br/>
+                    • Was able to be a fundamental part of ensuring software quality for an update to a large program used in the infrastructure of hundreds of medium to large business
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="body-inner">
+            <div class="sidebar-second">
+                <div class="icon-container">
+                    <p>
+                        <span class="body-title">The Church of Jesus Christ of Latter-Day Saints</span><br/>
+                        Volunteer Representative
+                        <br/><br/>
+                        Cusco, Peru
+                    </p>
+                </div>
+            </div>
+            <div class="welcome-second">
+                <p>
+                    <span>Experience Obtained:</span>
+                    <br/>
+                    • Led a group of 6-10 co-volunteers, conducted weekly training meetings and provided motivation in order to help them reach their goals<br/>
+                    • Provided teaching for individuals and families to help them have more service-oriented lives and stronger relationships within their homes and in society<br/>
+                    • Developed communication and teamwork skills working closely with teaching companions
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="title-img title-img-fourth">
+        <p class="caption">Quito, Pichincha, Ecuador</p>
+    </div>
+    <div class="title">
+        <div class="title-inner-fourth" id="skills-section">
+            <h3>Skillset</h3>
+            <!--<hr/>-->
+        </div>
+    </div>
+
+
+    <div class="spacer"></div>
+
+
+    <div class="body">
+        <div class="body-inner">
+            <div class="welcome">
+                <p>
+                    <span>Programming Languages:</span>
+                    <br/>
+                    C, C++, C#, Java, XML, HTML, CSS, JavaScript, jQuery, AngularJS, React Native, Node.js, PHP, SQL, MongoDB
+                    <br/><br/>
+                    <span>Content Management Systems:</span>
+                    <br/>
+                    Drupal
+                    <br/><br/>
+                    <span>Environments:</span>
+                    <br/>
+                    Visual Studio, Eclipse, Android Studio, JetBrains IDEs
+                    <br/><br/>
+                    <span>Operating Systems:</span>
+                    <br/>
+                    Windows, Mac OS, Linux
+                    <br/><br/>
+                    <span>Spanish</span> -- fluent in speech, high level of comprehension, reading, and writing
+                </p>
+            </div>
+            <div class="sidebar">
+                <div class="icon-container">
+                    <span>Awards:</span>
+                    <br/>
+                    Team took 3rd place in Winter 2017 ACM Hack-Day
+                    <br/><br/>
+                    <span>Clubs:</span>
+                    <br/>
+                    BYU ACM (Association for Computing Machinery), BYU Dev Club
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+
+        <div class="icon-container-footer">
+            <a href="https://github.com/athompson909"><img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/></a>
+            <a href="https://www.linkedin.com/in/adam-thompson-b11554114/"><img class="icon" src="https://image.flaticon.com/icons/svg/49/49408.svg"/></a>
+            <a href="https://www.instagram.com/adamthomp909"><img class="icon" src="https://image.flaticon.com/icons/svg/69/69366.svg"/></a>
+            <a href="https://www.facebook.com/profile.php?id=100004752060137"><img class="icon" src="https://image.flaticon.com/icons/svg/20/20673.svg"/></a>
+        </div>
+    </footer>
 </body>
 </html>
-
-Ò
