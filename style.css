@@ -19,6 +19,7 @@ hr {
 }
 
 #up-arrow {
+    display:none;
     position: fixed;
     bottom: 5%;
     right: 5%;
@@ -99,6 +100,21 @@ footer {
     background-repeat: repeat-y;
 }
 
+.title-img-fifth {
+    background: linear-gradient(50deg, rgba(170, 255, 0, .4), rgba(170, 255, 0, 1)), url(images/guat.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+}
+
+.title-img-sixth {
+    background: linear-gradient(50deg, rgba(170, 255, 0, .4), rgba(170, 255, 0, 1)), url(images/banff.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+}
+
+
 .title-img-first {
     height: 22em;
 }
@@ -122,8 +138,12 @@ footer {
     height: 7em;
 }
 
-.title-img-third, .title-img-fourth {
+.title-img-third, .title-img-fourth, .title-img-fifth {
     height: 22em;
+}
+
+.title-img-sixth {
+    height: 38em;
 }
 
 .title {
@@ -134,6 +154,20 @@ footer {
     opacity: .7;
     color: #000;
 }
+
+.title2 {
+    margin: -32em auto 15em auto;
+    display: flex;
+    justify-content: center;
+    opacity: .7;
+    color: #000;
+}
+
+.contact-p {
+    font-size: 26px;
+    line-height: 34px;
+}
+
 
 .title-inner {
     text-align: center;
@@ -154,6 +188,13 @@ footer {
 }
 
 .title-inner-third h3, .title-inner-fourth h3 {
+    letter-spacing: -.03em;
+    margin: 2em 0 0 0;
+    font-size: 3.6em;
+    font-weight: 700;
+}
+
+.title-inner-sixth h3 {
     letter-spacing: -.03em;
     margin: 2em 0 0 0;
     font-size: 3.6em;

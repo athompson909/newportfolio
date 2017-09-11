@@ -18,6 +18,20 @@ function scrollToExperience() {
     }, 600);
 }
 
+function scrollToVolunteering() {
+    // window.scrollTo(1000,1000);
+    $('html, body').animate({
+        scrollTop: $('#volunteering-section').offset().top + 'px',
+    }, 600);
+}
+
+function scrollToContact() {
+    // window.scrollTo(1000,1000);
+    $('html, body').animate({
+        scrollTop: $('#contact-section').offset().top + 'px',
+    }, 600);
+}
+
 function scrollToSkills() {
     // window.scrollTo(1000,1000);
     $('html, body').animate({
