@@ -240,7 +240,6 @@ footer {
 }
 
 .sidebar {
-
     float: right;
 }
 
@@ -258,6 +257,12 @@ footer {
 .body-inner-full-special-case {
 
     margin: -.2em .1em .1em .1em;
+}
+
+.prof-image {
+    padding: .5em 1.2em 1.2em 1.2em;
+    width: 68%;
+    margin: 0 auto;
 }
 
 .icon-container {
